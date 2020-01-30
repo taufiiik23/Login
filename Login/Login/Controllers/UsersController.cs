@@ -1,8 +1,10 @@
 ﻿using Login.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net.Mail;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -127,24 +129,37 @@ namespace Login.Controllers
                 return View();
             }
         }
-
+        [HttpGet]
         public ActionResult FormLogin()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult FormLogin(User user)
+        public async Task<ActionResult> FormLogin(User user)
         {
-            var login = myContext.Users.Find(user.Email);
-            if (login != null && BCrypt.Net.BCrypt.Verify(user.Password, login.Password))
+            var login = await myContext.Users.FirstOrDefaultAsync(a => a.Email.Equals(user.Email));
+            if(login != null)
             {
-                return RedirectToAction("Index", "FormLogin");
+                var password = BCrypt.Net.BCrypt.Verify(user.Password, login.Password);
+                if(password == true)
+                {
+                    Session["id"] = user.Id;
+                    Session.Add("Email", user.Email);
+
+                    return RedirectToAction("Users","Index");
+                }
+                
             }
-            else
-            {
-                return RedirectToAction("FormLogin", "FormLogin");
-            }
+            return RedirectToAction("Index");
+            //if (login != null && BCrypt.Net.BCrypt.Verify(user.Password, login.Password))
+            //{
+            //    return RedirectToAction("Index");
+            //}
+            //else
+            //{
+            //    return RedirectToAction("FormLogin");
+            //}
         }
 
         public ActionResult LogOut()

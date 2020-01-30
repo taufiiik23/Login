@@ -48,6 +48,7 @@ O:\Bootcamp 33\VS\Login\Login\bin\roslyn\vbc.rsp
 O:\Bootcamp 33\VS\Login\Login\bin\roslyn\VBCSCompiler.exe
 O:\Bootcamp 33\VS\Login\Login\bin\roslyn\VBCSCompiler.exe.config
 O:\Bootcamp 33\VS\Login\Login\bin\Antlr3.Runtime.dll
+O:\Bootcamp 33\VS\Login\Login\bin\BCrypt.Net.dll
 O:\Bootcamp 33\VS\Login\Login\bin\EntityFramework.dll
 O:\Bootcamp 33\VS\Login\Login\bin\EntityFramework.SqlServer.dll
 O:\Bootcamp 33\VS\Login\Login\bin\Microsoft.AspNet.Identity.Core.dll
@@ -74,6 +75,7 @@ O:\Bootcamp 33\VS\Login\Login\bin\System.Web.WebPages.Deployment.dll
 O:\Bootcamp 33\VS\Login\Login\bin\System.Web.WebPages.dll
 O:\Bootcamp 33\VS\Login\Login\bin\System.Web.WebPages.Razor.dll
 O:\Bootcamp 33\VS\Login\Login\bin\WebGrease.dll
+O:\Bootcamp 33\VS\Login\Login\bin\BCrypt.Net.xml
 O:\Bootcamp 33\VS\Login\Login\bin\System.Web.Helpers.xml
 O:\Bootcamp 33\VS\Login\Login\bin\System.Web.Mvc.xml
 O:\Bootcamp 33\VS\Login\Login\bin\System.Web.Optimization.xml
@@ -104,6 +106,4 @@ O:\Bootcamp 33\VS\Login\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
 O:\Bootcamp 33\VS\Login\Login\obj\Debug\Login.csproj.CopyComplete
 O:\Bootcamp 33\VS\Login\Login\obj\Debug\Login.dll
 O:\Bootcamp 33\VS\Login\Login\obj\Debug\Login.pdb
-O:\Bootcamp 33\VS\Login\Login\bin\BCrypt.Net.dll
-O:\Bootcamp 33\VS\Login\Login\bin\BCrypt.Net.xml
 O:\Bootcamp 33\VS\Login\Login\obj\Debug\Login.csprojAssemblyReference.cache
